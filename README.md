@@ -120,7 +120,3 @@ If SmartScreen blocks the launcher, click **More info → Run anyway**.
 - **"No key binding files found"**: launch the game once, open the controls settings, close the game, then try again.
 - **Settings didn't apply**: make sure the game was fully closed during restore, and pick the local files if Steam shows a cloud conflict.
 - **Something broke**: restore the automatic `before-restore` backup, or delete `input_settings.config` to reset bindings to the game defaults.
-
-## Disclaimer
-
-Not affiliated with Arrowhead Game Studios or Sony Interactive Entertainment. Use at your own risk; backups are made before every restore, but keep your own copy of anything important.
