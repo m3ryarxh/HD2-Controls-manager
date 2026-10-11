@@ -114,9 +114,3 @@ The `.bat` launcher starts PowerShell with `-ExecutionPolicy Bypass`, because Wi
 The tool is plain text and fully readable: open `HD2-Controls.ps1` in Notepad to see exactly what it does. It only reads and writes the Helldivers 2 config files listed above and its own backup folder, and it makes no network connections.
 
 If SmartScreen blocks the launcher, click **More info → Run anyway**.
-
-## Troubleshooting
-
-- **"No key binding files found"**: launch the game once, open the controls settings, close the game, then try again.
-- **Settings didn't apply**: make sure the game was fully closed during restore, and pick the local files if Steam shows a cloud conflict.
-- **Something broke**: restore the automatic `before-restore` backup, or delete `input_settings.config` to reset bindings to the game defaults.
