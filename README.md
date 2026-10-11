@@ -97,20 +97,3 @@ ps` to the new PC.
 4. Run the tool, choose **2 (Restore)** and select the zip.
 
 If Steam reports a cloud save conflict on the next launch, choose the **local** files.
-
-## Where the game keeps its settings
-
-The tool checks all known locations:
-
-- `[Steam]\userdata\[user id]\553850\remote\input_settings.config`
-- `[Steam]\userdata\[user id]\553850\input_settings.config`
-- `%APPDATA%\Arrowhead\Helldivers2\saves\*input_settings.config`
-- `%APPDATA%\Arrowhead\Helldivers2\user_settings.config`
-
-## Why does my antivirus / SmartScreen complain?
-
-The `.bat` launcher starts PowerShell with `-ExecutionPolicy Bypass`, because Windows blocks unsigned local scripts by default. That pattern triggers heuristic scanners even for harmless scripts.
-
-The tool is plain text and fully readable: open `HD2-Controls.ps1` in Notepad to see exactly what it does. It only reads and writes the Helldivers 2 config files listed above and its own backup folder, and it makes no network connections.
-
-If SmartScreen blocks the launcher, click **More info → Run anyway**.
